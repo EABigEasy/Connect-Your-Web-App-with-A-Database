@@ -11,10 +11,10 @@ There are countless web apps on the Internet today, and engineers use databases 
 
 Let's build a mini version of this pattern, by setting up a web app from scratch and connecting it with a relational database (Amazon Aurora) to store things that users input.
 
-### Step1 ###
+### Step1 
 Login with your IAM user
 
-### Step 2###
+### Step 2
 Launch EC2 Instance
 ***Why do we need an EC2 instance to run a web app?*** 
 A web app needs to run on a computer. But are we going to go buy a physical computer to do this?
