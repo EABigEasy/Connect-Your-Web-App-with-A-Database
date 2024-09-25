@@ -44,5 +44,3 @@ Note the value for Key pair assigned at launch.
 
 ### Step 3
 Create an Aurora MySQL Database
-
-Since a EC2 instance is a virtual machine, a good way to think about key pairs is like the login credentials to your own computer...except it's all virtual!
