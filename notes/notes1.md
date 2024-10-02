@@ -50,6 +50,19 @@ A relational database is a type of database that organizes data into tables, whi
 
 When a database is relational we can query it using a special language called SQL (Structured Query Language)
 
+
+Let's create your Aurora database
+
+Head to RDS console - search for rds
+ in search bar at the top of the screen.
+Notice that even if you search for Aurora
+, the same result shows up!
+-In the left navigation bar, select Databases.
+-In the Database section, select Create Database.
+-On the Create database page, choose Standard Create.
+-In the Configuration section, make the following changes:
+-For Engine type, choose Aurora (MySQL Compatible).
+
 Strangely enough, there isn't really such a thing as a "normal" database. We have relational databases and non-relational databases (also known as NoSQL)
 
 - Make sure you're in the same region ( your Aurora DB)  as your web server EC2 instance.
