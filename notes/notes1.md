@@ -67,3 +67,20 @@ Strangely enough, there isn't really such a thing as a "normal" database. We hav
 
 - Make sure you're in the same region ( your Aurora DB)  as your web server EC2 instance.
 
+***What is engine type?***
+The engine type is like the core software that powers our database. Imagine it as the operating system of a computer, but for databases.
+
+
+***How is Aurora different to other databases?***
+AWS Aurora is a type of relational database. As you can tell from the first few steps of creating a relational database, there are plenty of options to choose from! 
+
+We'd use AWS Aurora if we needed something large-scale, with peak performance and uptime. This is because Aurora databases use clusters (more on that later!). Ordinary relational databases, like MySQL and Oracle are more generic and cost-effective. They suit smaller databases and less demanding workloads.
+
+### In summary; Aurora is for the big jobs. Fun fact: Coca-Cola uses Amazon Aurora to store their consumer data globally!
+
+
+For Engine Version, choose Aurora MySQL 3.05.2 (compatible with MySQL 8.0.32) - default for major version 8.0
+For Templates, choose Dev/Test
+
+***What are Templates?***
+Templates are pre-set settings that help you quickly set up your database environment according to your needs. It's basically AWS helping you make selections for the rest of this set-up page! The Dev/Test template is designed for development and testing environments, helping you pick lower cost options.***
