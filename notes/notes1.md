@@ -84,3 +84,20 @@ For Templates, choose Dev/Test
 
 ***What are Templates?***
 Templates are pre-set settings that help you quickly set up your database environment according to your needs. It's basically AWS helping you make selections for the rest of this set-up page! The Dev/Test template is designed for development and testing environments, helping you pick lower cost options.***
+
+
+***In the Settings section, set these values:***
+
+DB cluster identifier: nextwork-db-cluster
+
+Master username: admin
+
+For Credentials management select Self managed.
+
+Master password: Type a password (eg. n3xtw0rk)
+
+Confirm password: Retype the password.
+
+Make sure you save your database login details somewhere safe! You'll need them later on.
+
+
