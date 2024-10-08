@@ -101,3 +101,53 @@ Confirm password: Retype the password.
 Make sure you save your database login details somewhere safe! You'll need them later on.
 
 
+***Leave the Cluster storage configuration settings as default..***
+In the Instance configuration section,
+set these values:. Burstable classes (includes t classes). db.t3.medium
+
+
+***What are Burstable classes?***
+The Burstable classes (includes t classess) are cost-effective types of database instances that are best when you have a consistent baseline level of traffic with occassional, random spikes in demand...a sudden "burst" of traffic. 
+By choosing burstable classes, our database can perform well under high traffic, but also save us costs when things are quiet.Extra for Experts: 
+The other two DB instance classes are Serverless V2, which let you only pay for what you use (scales automatically from zero traffic), and memory optimized classes, which are designed for high-performance databases that need to do heavy, memory-intensive tasks.
+
+
+
+That's it! We've created our web app's server in the previous step.
+Let's connect that instance to our database now.. 
+For Compute resource, choose Connect to an EC2 compute resource..
+Now select the drop down for EC2 instance, and choose ***nextwork-ec2-instance-web-server.***
+
+Scroll down and open the Additional configuration section.. 
+Enter sample for Initial database name.
+
+Keep the default settings for the other options..
+Select Create database.
+
+Close any pop-ups that appear.. 
+Your new DB cluster will show in the Databases list with the status Creating.
+
+
+Do you notice that your database has the name nextwork-db-cluster and that there's 2 of them? What's with that?.
+***Note***: It may take five or more minutes for the database to be created.
+***What's this 'database cluster' business?***
+Remember how we said that Aurora is really good for the big jobs? The reason for this is ****clusters****.
+****A database cluster**** in Aurora is a group of database copies that work together so your data is always available.Each cluster consists of a primary instance (where all write operations occur) and multiple read replicas as back-ups. If your database's primary instance fails, one of the replicas can be promoted to primary automatically.. 
+
+Wait for the Status of your new DB cluster to show as Available.. 
+Select the DB identifier of your top database to take a look at the details..
+Notice that there are two Endpoints in our Database. Cool! This is our cluster in action.. 
+
+#### Understanding Reader vs Writer instances####
+
+Our writer database instance is our primary instance that handles all the "write" operations like INSERT, UPDATE, and DELETE.Our reader database instance is our backup instance that can do very basic operations like SELECT. This is used to get data, but not to add or change data.Why separate read and write?We only want one writer instance at a time so that things stay focused and controlled...but we want multiple reader instances so that we can share the workload for read requests as our database grows and have a backup if our writer instance fails.What is an endpoint?In general, endpoints are like contact points where data flows in and out. A super popular example is a website URL! When you enter a website's address (like nextwork.org), your browser uses that endpoint to receive data and load the page. For databases, an endpoint is how your app finds a database to ask for data or update it.. Yay! We've created a new relational database and have a waiting EC2 instance for our beautiful new web app. . 
+
+This is what we created in this step:. 
+
+![architecture-diagram aurora](https://github.com/user-attachments/assets/4efde979-00d3-400a-a018-0ff0b14d052a)
+
+### Step 4
+Create your web app. 
+In this step, you're going to:. 
+Connect to your EC2 instance through SSH.. 
+Install a basic Web App that runs on your EC2 instance.
