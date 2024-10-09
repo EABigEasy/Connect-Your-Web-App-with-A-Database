@@ -148,6 +148,16 @@ This is what we created in this step:.
 
 ### Step 4
 Create your web app. 
-In this step, you're going to:. 
+In this step, you're going to:
 Connect to your EC2 instance through SSH.. 
 Install a basic Web App that runs on your EC2 instance.
+
+. ![architecture-diagram6](https://github.com/user-attachments/assets/06740ebd-a0f8-49e2-985c-0359815d0320)
+
+
+
+
+
+Open your local Terminal. 
+On a Mac:. Press Cmd + Space to open Spotlight.. Type Terminal and press Enter..
+On a Windows/Linux:. Press Windows + R to open the Run dialog.. Type cmd or powershell and press Enter.
