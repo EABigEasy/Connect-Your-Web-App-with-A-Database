@@ -161,3 +161,6 @@ Install a basic Web App that runs on your EC2 instance.
 Open your local Terminal. 
 On a Mac:. Press Cmd + Space to open Spotlight.. Type Terminal and press Enter..
 On a Windows/Linux:. Press Windows + R to open the Run dialog.. Type cmd or powershell and press Enter.
+
+
+Connect to your EC2 instance. You need to access your .pem file in order to login successfully to your EC2 instance - remember, the .pem file is like your keys to your EC2 instance!. Find your .pem file on your local computer (it's probably in your downloads folder!) and put it in a new folder on your Desktop labelled nextwork. Nice! Now we need to navigate to that folder from your terminal, so we can use it.. Run the command ls in your terminal - this shows you all the folders that you can see from your current terminal position.
