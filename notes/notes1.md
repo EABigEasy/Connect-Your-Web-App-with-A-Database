@@ -164,3 +164,8 @@ On a Windows/Linux:. Press Windows + R to open the Run dialog.. Type cmd or powe
 
 
 Connect to your EC2 instance. You need to access your .pem file in order to login successfully to your EC2 instance - remember, the .pem file is like your keys to your EC2 instance!. Find your .pem file on your local computer (it's probably in your downloads folder!) and put it in a new folder on your Desktop labelled nextwork. Nice! Now we need to navigate to that folder from your terminal, so we can use it.. Run the command ls in your terminal - this shows you all the folders that you can see from your current terminal position.
+
+If you can see the desktop folder when you run ls then you're in the right place.. If you can't see the desktop folder, then use the following commands to navigate up and down your folders until you can see desktop... . 
+To go back one folder run the command cd ../.. To go into a folder, run the command cd folder-name and replace folder-name with the name of the folder you'd like to enter.. For example, to navigate to my desktop folder, I took the following steps:
+
+Once you can see your Desktop folder, navigate into that folder by running cd Desktop.. Then navigate into your nextwork folder by running cd nextwork.. Run ls to make sure your .pem file is there!
