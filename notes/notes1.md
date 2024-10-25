@@ -167,7 +167,8 @@ Connect to your EC2 instance. You need to access your .pem file in order to logi
 Run the command ls in your terminal - this shows you all the folders that you can see from your current terminal position.
 
 If you can see the desktop folder when you run ls then you're in the right place.. If you can't see the desktop folder, then use the following commands to navigate up and down your folders until you can see desktop... . 
-To go back one folder run the command cd ../.. To go into a folder, run the command cd folder-name and replace folder-name with the name of the folder you'd like to enter.. For example, to navigate to my desktop folder, I took the following steps:
+To go back one folder run the command cd ../.. To go into a folder, 
+run the command cd folder-name and replace folder-name with the name of the folder you'd like to enter.. For example, to navigate to my desktop folder, I took the following steps:
 
 Once you can see your Desktop folder, navigate into that folder by running cd Desktop.. Then navigate into your nextwork folder by running cd nextwork..
 Run command ls to make sure your .pem file is there!
@@ -176,4 +177,4 @@ Now we just need the "address" of our EC2 instance and then we get inside..
 Back in your AWS console, navigate to the details page of your nextwork-ec2-instance-web-server EC2 instance..
 Copy your Public IPv4 DNS address
 
-end@ 57.34
+end@57.34
