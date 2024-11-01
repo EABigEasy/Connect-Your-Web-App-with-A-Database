@@ -12,7 +12,7 @@ There are countless web apps on the Internet today, and engineers use databases 
 Let's build a mini version of this pattern, by setting up a web app from scratch and connecting it with a relational database (Amazon Aurora) to store things that users input.
 
 ### Step1 
-Login with your IAM user
+Login with your IAM user.Remember best practices, for security purposes
 
 ### Step 2
 Launch EC2 Instance
