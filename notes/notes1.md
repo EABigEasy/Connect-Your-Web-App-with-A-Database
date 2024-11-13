@@ -177,4 +177,4 @@ Now we just need the "address" of our EC2 instance and then we get inside..
 Back in your AWS console, navigate to the details page of your nextwork-ec2-instance-web-server EC2 instance..
 Copy your Public IPv4 DNS address
 
-end@57.34
+end@57.00
